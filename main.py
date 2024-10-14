@@ -5,10 +5,13 @@
 #lista alumnos 
 lista_alumnos=[]
 while True:
+    print("""\n         ___¡VIENVENIDO!___
+:::REALIZE LA MATRICULA DEL ALUMNO:::\n""")
     nombre=input("ingrese el nombre: ")
-    apellido=input("ingrese el apellido: ")
-    opcion=input("desea seguir añadiendo? s/n-> ")
-    if opcion == "s":
-        lista_alumnos.append({"nombre":nombre,"apellido":apellido})
-    for alumnos in lista_alumnos:
-        print(alumnos)
+    apellido=input("ingrese el apellido: ") 
+    lista_alumnos.append({"nombre":nombre,"apellido":apellido})
+    opcion=input("desea seguir añadiendo? s/n-> ") 
+    if opcion.lower() != "s":
+        break
+for alumnos in lista_alumnos:
+    print(alumnos)
