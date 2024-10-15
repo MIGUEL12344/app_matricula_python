@@ -1,1 +1,5 @@
+# virtual enviroment
 matricula
+# compiled python files
+__pycache__/
+*.pyc
